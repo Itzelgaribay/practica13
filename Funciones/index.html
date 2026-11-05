@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title> FUNCIONES </title>
+
+        <!-- Adaptación para celulares -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            @media screen and (max-width: 480px) {
+                body {
+                    max-width: 100%;
+                    overflow-wrap: break-word;
+                }
+            }
+        </style>
+
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <script>
+
+            function suma (a, b)
+            {
+                let resultado = a+b
+                document.write(resultado)
+            }
+
+            function salta()
+            {
+                document.write("<br>")
+            }
+
+            function texto (cadena, colortext, tam)
+            {
+                document.write("<font size="+tam+" color="+colortext+"> <b>"+cadena+"</b> </font>")
+            }
+
+            function texto2 (cadena, tam, colortext, tipograf)
+            {
+                document.write("<h"+tam+"><font color="+colortext+" style='font-family:"+tipograf+"'><b>"+cadena+"</b></font></h"+tam+">")
+            }
+
+            suma (30, 40)
+            salta()
+
+            texto("SALUDOS", "purple", 5)
+            salta()
+
+            texto("Soy Estrella", "red", 5)
+
+            texto2("BIENVENIDO", 3, "darkgreen", "Arial")
+
+            texto2("HOLA MUNDO, COLOR AMARILLO Y TIPOGRAFIA ARIAL", 2, "yellow", "Arial")
+
+            texto2("HOLA MUNDO CON H 6, COLOR PURPURA Y TIPOGRAFIA SCIENCE GOTHIC", 3, "purple", "Science Gothic")
+
+
+
+        </script>
+    </body>
+</html>
